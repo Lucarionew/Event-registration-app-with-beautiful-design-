@@ -5,10 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    // Change these when using RDS later
-    private static final String URL = "jdbc:mysql://localhost:3306/eventdb?useSSL=false&serverTimezone=UTC";
-    private static final String USER = "root";          // Change if needed
-    private static final String PASSWORD = "yourpassword";  // Change to your MySQL password
+
+    private static final String URL =
+        "jdbc:postgresql://database-1.cr88a42a2s7k.ap-southeast-2.rds.amazonaws.com:5432/EventData";
+
+    private static final String USER = "postgres";
+    private static final String PASSWORD = "simplylovely33";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
