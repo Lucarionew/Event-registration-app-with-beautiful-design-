@@ -1,0 +1,5 @@
+com\eventapp\util\DBConnection.class
+com\eventapp\controller\RegisterServlet.class
+com\eventapp\controller\EventServlet.class
+com\eventapp\dao\UserDao.class
+com\eventapp\model\User.class
